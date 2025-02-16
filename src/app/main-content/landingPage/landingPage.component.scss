@@ -1,0 +1,24 @@
+h1 {
+  color: white;
+  font-size: 64px;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.headline {
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/bgr1.jpg");
+  background-size: cover;
+  background-position: center;
+}

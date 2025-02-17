@@ -20,7 +20,7 @@ a {
   color: white;
   text-decoration: none;
   font-weight: 700;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   &:hover{
     color:red;
   }
@@ -42,5 +42,6 @@ a {
   align-items: center;
   &:hover{
     background-color: red;
+    color: white !important;
   }
 }

@@ -1,0 +1,19 @@
+footer{
+    background-color: #191818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+div{
+    padding: 64px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    cursor: pointer;
+}

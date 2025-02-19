@@ -1,3 +1,24 @@
+$c: center;
+$white: white;
+
+@mixin borderStyling($bStyle, $bColor) {
+  border-radius: 8px;
+  border: 2px $bStyle $bColor;
+}
+
+.call-btn {
+  margin-right: 64px;
+  background-color: rgba(255, 0, 0, 0.788);
+  padding: 6px;
+  @include borderStyling(solid, green);
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: red;
+    color: white !important;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -6,7 +27,7 @@ nav {
   right: 0;
   left: 0;
   padding: 24px;
-  >img{
+  > img {
     margin-left: 64px;
   }
 }
@@ -17,31 +38,17 @@ nav {
 }
 
 a {
-  color: white;
+  color: $white;
   text-decoration: none;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  &:hover{
-    color:red;
+  &:hover {
+    color: red;
   }
 }
 
 .links {
   display: flex;
-  align-items: center;
+  align-items: $c;
   gap: 96px;
-}
-
-.call-btn {
-  margin-right: 64px;  
-  background-color: rgba(255, 0, 0, 0.788);
-  padding: 6px;
-  border-radius: 8px;
-  border: 2px solid white;
-  display: flex;
-  align-items: center;
-  &:hover{
-    background-color: red;
-    color: white !important;
-  }
 }
